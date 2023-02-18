@@ -1,0 +1,805 @@
+<!doctype html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>webpoosh demo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="icon" href="http://www.webpoosh.com/site/app/img/logo/favicon_webpoosh.ico?v=002" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+
+    <!-- Demo styles -->
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+
+        }
+
+        body {
+            background: rgb(255, 255, 255);
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-xxl " style="font-family: yekan;">
+
+
+        
+       
+
+
+
+        <!-- in baraye navbar lg hast -->
+        <div class="d-lg-block d-none">
+            <div class="row d-flex align-items-center justify-content-between " style="font-family: yekan;">
+                <div class="col">
+                    <nav class="navbar navbar-expand-lg ">
+                        <div class="container-fluid">
+                            <img src="img/wp-logo.png" alt="">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">جدید ترین</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#">ست ها</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#">کفش ها</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active">تخفیف ها</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col d-flex justify-content-end mx-5">
+                    <a href="" class="mx-2" style="font-size: 24px; color: unset;"><i class="bi bi-search"></i></a>
+                    <a href="" class="mx-2" style="font-size: 24px; color: unset;"><i class="bi bi-cart"></i></a>
+                    <a href="" class="mx-2" style="font-size: 24px; color: unset;"><i class="bi bi-person-fill"></i></a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- in baraye navbare sm md hast -->
+        <div class="row d-lg-none ">
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="">
+                        <img src="img/wp-logo.png" height="100%" alt="">
+                    </div>
+                    <div class="">
+                        <a class="navbar-brand" href="#"><i class="bi bi-person-fill"></i></a>
+                        <a class="navbar-brand" href="#"><i class="bi bi-cart"></i></a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">جدید ترین</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ست ها</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ">کفش ها</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ">تخفیف ها</a>
+                            </li>
+                        </ul>
+                       
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+
+        <!-- in braye axe slider hast  -->
+
+        <div class="d-sm-block d-none">
+            <a href=""><img src="img/1667139636_p.jpg" width="100%" alt=""></a>
+        </div>
+
+
+       
+
+        <!-- text box e jadid tarin -->
+        <div class="d-lg-block d-none">
+            <div class=" w-100 my-4 -text-p" style="height: 200px; background-color: black;">
+                <span style="color: white; font-size: 28px;" class="-span1">جدید ترین لباس های فصل</span><br>
+                <span style="color: white; font-size: 18px;" class="-span2">هر روز محصول جدید رو اینجا ببین</span>
+                <a href="" class="btn btn-outline-light"> مشاهده محصولات</a>
+            </div>
+        </div>
+
+
+
+        <!-- swiper lg hast  -->
+        <div class="d-lg-block d-none my-2">
+            <div class="swiper mySwiper swiper-initialized swiper-horizontal swiper-pointer-events"
+                style="height: 400px;">
+                <div class="swiper-wrapper" id="swiper-wrapper-fba42b2ee339f3f3" aria-live="polite"
+                    style="transition-duration: 0ms; transform: translate3d(-4173px, 0px, 0px);">
+                    <!-- <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="6" role="group"
+                        aria-label="7 / 9" style="width: 1361px; margin-right: 30px;">Slide 7</div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="7" role="group"
+                        aria-label="8 / 9" style="width: 13px; margin-right: 30px;">Slide 8</div>
+                    <div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="8"
+                        role="group" aria-label="9 / 9" style="width: 1361px; margin-right: 30px;">Slide 9</div> -->
+                    <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" role="group"
+                        aria-label="1 / 9" style="width: 13px; margin-right: -30px;">
+
+                        <div class="row">
+                            <div class="">
+                                <a href=""><img src="img/1583248870_p-medium (1).jpg" alt=""></a>
+                            </div>
+                            <div class="">
+                                <a href="" style="color: unset; text-decoration: unset;"><span> شلوار اسلش</span></a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="1" role="group"
+                        aria-label="2 / 9" style="width: 13px; margin-right: 10px;">
+                        <div class="row">
+                            <div class="">
+                                <a href=""><img src="img/boot.jpg" alt=""></a>
+                            </div>
+                            <div class="">
+                                <a href="" style="color: unset; text-decoration: unset;"><span> نیم بوت ها</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-swiper-slide-index="2" role="group" aria-label="3 / 9"
+                        style="width: 13px; margin-right: 10px;">
+                        <div class="row">
+                            <div class="">
+                                <a href=""><img src="img/kafsh.jpg" alt=""></a>
+                            </div>
+                            <div class="">
+                                <a href="" style="color: unset; text-decoration: unset;"><span>کفش اسپورت </span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-swiper-slide-index="3" role="group" aria-label="4 / 9"
+                        style="width: 13px; margin-right: 10px;">
+                        <div class="row">
+                            <div class="">
+                                <a href=""><img src="img/kamarband.jpg" alt=""></a>
+                            </div>
+                            <div class="">
+                                <a href="" style="color: unset; text-decoration: unset;"><span>کمربند ها</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-swiper-slide-index="4" role="group" aria-label="5 / 9"
+                        style="width: 13px; margin-right: 10px;">
+                        <div class="row">
+                            <div class="">
+                                <a href=""><img src="img/kolah.jpg" alt=""></a>
+                            </div>
+                            <div class="">
+                                <a href="" style="color: unset; text-decoration: unset;"><span>کلاه </span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-swiper-slide-index="5" role="group" aria-label="6 / 9"
+                        style="width: 13px; margin-right: 10px;">
+                        <div class="row">
+                            <div class="">
+                                <a href=""><img src="img/1583248870_p-medium (1).jpg" alt=""></a>
+                            </div>
+                            <div class="">
+                                <a href="" style="color: unset; text-decoration: unset;"><span> شلوار اسلش</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-swiper-slide-index="6" role="group" aria-label="7 / 9"
+                        style="width: 13px; margin-right: 10px;">
+                        <div class="row">
+                            <div class="">
+                                <a href=""><img src="img/boot.jpg" alt=""></a>
+                            </div>
+                            <div class="">
+                                <a href="" style="color: unset; text-decoration: unset;"><span> نیم بوت ها</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-swiper-slide-index="7" role="group" aria-label="8 / 9"
+                        style="width: 13px; margin-right: 10px;">
+                        <div class="row">
+                            <div class="">
+                                <a href=""><img src="img/kafsh.jpg" alt=""></a>
+                            </div>
+                            <div class="">
+                                <a href="" style="color: unset; text-decoration: unset;"><span>کفش اسپورت </span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="8" role="group"
+                        aria-label="9 / 9" style="width: 13px; margin-right: 10px;">
+                        <div class="row">
+                            <div class="">
+                                <a href=""><img src="img/kolah.jpg" alt=""></a>
+                            </div>
+                            <div class="">
+                                <a href="" style="color: unset; text-decoration: unset;"><span>کلاه </span></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- ///////////////// -->
+                    <div class="swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="8" role="group"
+                        aria-label="9 / 9" style="width: 13px; margin-right: 10px;">
+                        <div class="row">
+                            <div class="">
+                                <a href=""><img src="img/1581262865_p-medium.jpg" alt=""></a>
+                            </div>
+                            <div class="">
+                                <a href="" style="color: unset; text-decoration: unset;"><span>کاپشن </span></a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="8" role="group"
+                        aria-label="9 / 9" style="width: 13px; margin-right: 10px;">
+                        <div class="row">
+                            <div class="">
+                                <a href=""><img src="img/1581263030_p-medium.jpg" alt=""></a>
+                            </div>
+                            <div class="">
+                                <a href="" style="color: unset; text-decoration: unset;"><span>هودی </span></a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
+                        data-swiper-slide-index="0" role="group" aria-label="1 / 9"
+                        style="width: 1361px; margin-right: 30px;">Slide 1</div>
+                    <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next"
+                        data-swiper-slide-index="1" role="group" aria-label="2 / 9"
+                        style="width: 1361px; margin-right: 30px;">Slide 2</div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2" role="group"
+                        aria-label="3 / 9" style="width: 1361px; margin-right: 30px;">Slide 3</div> -->
+                </div>
+                <div class="--next" tabindex="0" role="button"><i class="bi bi-arrow-left-circle-fill"
+                        style="font-size: 30px; margin-right: 28px;"></i></div>
+                <div class=" --prev" tabindex="0" role="button"> <i class="bi bi-arrow-right-circle-fill"
+                        style="font-size: 30px; margin-right: 28px;"></i></div>
+                <!-- <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span></div> -->
+                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+            </div>
+        </div>
+
+
+        <!-- swiper sm hast  -->
+        <div class="d-lg-none d-block my-2">
+            <div class="swiper mySwiper1 swiper-initialized swiper-horizontal swiper-pointer-events"
+                style="height: 400px;">
+                <div class="swiper-wrapper" id="swiper-wrapper-fba42b2ee339f3f3" aria-live="polite"
+                    style="transition-duration: 0ms; transform: translate3d(-4173px, 0px, 0px);">
+                    <!-- <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="6" role="group"
+                        aria-label="7 / 9" style="width: 1361px; margin-right: 30px;">Slide 7</div>
+                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="7" role="group"
+                        aria-label="8 / 9" style="width: 13px; margin-right: 30px;">Slide 8</div>
+                    <div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="8"
+                        role="group" aria-label="9 / 9" style="width: 1361px; margin-right: 30px;">Slide 9</div> -->
+                    <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" role="group"
+                        aria-label="1 / 9" style="width: 13px; margin-right: -30px;">
+
+                        <div class="row">
+                            <div class="">
+                                <a href=""><img src="img/1583248870_p-medium (1).jpg" alt=""></a>
+                            </div>
+                            <div class="">
+                                <a href="" style="color: unset; text-decoration: unset;"><span> شلوار اسلش</span></a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="1" role="group"
+                        aria-label="2 / 9" style="width: 13px; margin-right: 10px;">
+                        <div class="row">
+                            <div class="">
+                                <a href=""><img src="img/boot.jpg" alt=""></a>
+                            </div>
+                            <div class="">
+                                <a href="" style="color: unset; text-decoration: unset;"><span> نیم بوت ها</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-swiper-slide-index="2" role="group" aria-label="3 / 9"
+                        style="width: 13px; margin-right: 10px;">
+                        <div class="row">
+                            <div class="">
+                                <a href=""><img src="img/kafsh.jpg" alt=""></a>
+                            </div>
+                            <div class="">
+                                <a href="" style="color: unset; text-decoration: unset;"><span>کفش اسپورت </span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-swiper-slide-index="3" role="group" aria-label="4 / 9"
+                        style="width: 13px; margin-right: 10px;">
+                        <div class="row">
+                            <div class="">
+                                <a href=""><img src="img/kamarband.jpg" alt=""></a>
+                            </div>
+                            <div class="">
+                                <a href="" style="color: unset; text-decoration: unset;"><span>کمربند ها</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-swiper-slide-index="4" role="group" aria-label="5 / 9"
+                        style="width: 13px; margin-right: 10px;">
+                        <div class="row">
+                            <div class="">
+                                <a href=""><img src="img/kolah.jpg" alt=""></a>
+                            </div>
+                            <div class="">
+                                <a href="" style="color: unset; text-decoration: unset;"><span>کلاه </span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-swiper-slide-index="5" role="group" aria-label="6 / 9"
+                        style="width: 13px; margin-right: 10px;">
+                        <div class="row">
+                            <div class="">
+                                <a href=""><img src="img/1583248870_p-medium (1).jpg" alt=""></a>
+                            </div>
+                            <div class="">
+                                <a href="" style="color: unset; text-decoration: unset;"><span> شلوار اسلش</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-swiper-slide-index="6" role="group" aria-label="7 / 9"
+                        style="width: 13px; margin-right: 10px;">
+                        <div class="row">
+                            <div class="">
+                                <a href=""><img src="img/boot.jpg" alt=""></a>
+                            </div>
+                            <div class="">
+                                <a href="" style="color: unset; text-decoration: unset;"><span> نیم بوت ها</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-swiper-slide-index="7" role="group" aria-label="8 / 9"
+                        style="width: 13px; margin-right: 10px;">
+                        <div class="row">
+                            <div class="">
+                                <a href=""><img src="img/kafsh.jpg" alt=""></a>
+                            </div>
+                            <div class="">
+                                <a href="" style="color: unset; text-decoration: unset;"><span>کفش اسپورت </span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="8" role="group"
+                        aria-label="9 / 9" style="width: 13px; margin-right: 10px;">
+                        <div class="row">
+                            <div class="">
+                                <a href=""><img src="img/kolah.jpg" alt=""></a>
+                            </div>
+                            <div class="">
+                                <a href="" style="color: unset; text-decoration: unset;"><span>کلاه </span></a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- ///////////////////// -->
+                    <div class="swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="8" role="group"
+                        aria-label="9 / 9" style="width: 13px; margin-right: 10px;">
+                        <div class="row">
+                            <div class="">
+                                <a href=""><img src="img/1581262865_p-medium.jpg" alt=""></a>
+                            </div>
+                            <div class="">
+                                <a href="" style="color: unset; text-decoration: unset;"><span>کاپشن </span></a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="8" role="group"
+                        aria-label="9 / 9" style="width: 13px; margin-right: 10px;">
+                        <div class="row">
+                            <div class="">
+                                <a href=""><img src="img/1581263030_p-medium.jpg" alt=""></a>
+                            </div>
+                            <div class="">
+                                <a href="" style="color: unset; text-decoration: unset;"><span>هودی </span></a>
+                            </div>
+                        </div>
+
+                    </div>
+                
+                </div>
+                <div class="--next" tabindex="0" role="button"><i class="bi bi-arrow-left-circle-fill"
+                        style="font-size: 30px; margin-right: 28px;"></i></div>
+                <div class=" --prev" tabindex="0" role="button"> <i class="bi bi-arrow-right-circle-fill"
+                        style="font-size: 30px; margin-right: 28px;"></i></div>
+                <!-- <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span></div> -->
+                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+            </div>
+        </div>
+
+
+        <!-- bannner lg , md hast inja -->
+        <div class="d-lg-block d-md-block d-none">
+            <div class="row my-4">
+                <div class="col-6 --jacket">
+                    <a href=""><img src="img/1667138416_second_pic.jpg" class="" width="98%" alt=""></a>
+                    <span class="--jacket-span" style="font-size: 40px;">کاپشن مردانه</span>
+                    <a href="" class="btn btn-light --jacket-button" style="color: unset;text-decoration: unset;">
+                        خرید</a>
+                </div>
+
+                <div class="col-6 --jacket1">
+                    <a href=""><img src="img/hodi.jpg" class="" width="98%" alt=""></a>
+                    <span class="--jacket1-span" style="font-size: 40px;">هودی مردانه</span>
+                    <a href="" class="btn btn-outline-dark --jacket1-button"
+                        style="color: unset;text-decoration: unset;"> خرید</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- bannner sm hast inja -->
+        <div class="d-sm-none d-block">
+            <div class="row my-4">
+                <div class="col-12 --jacket3 my-2">
+                    <a href=""><img src="img/1667138416_second_pic.jpg" class="" width="98%" alt=""></a>
+                    <span class="--jacket3-span" style="font-size: 40px;">کاپشن مردانه</span>
+                    <a href="" class="btn btn-light --jacket3-button" style="color: unset;text-decoration: unset;">
+                        خرید</a>
+                </div>
+
+                <div class="col-12 --jacket4 my-2">
+                    <a href=""><img src="img/hodi.jpg" class="" width="98%" alt=""></a>
+                    <span class="--jacket4-span" style="font-size: 40px;">هودی مردانه</span>
+                    <a href="" class="btn btn-outline-dark --jacket4-button"
+                        style="color: unset;text-decoration: unset;"> خرید</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- jadid tarin ha -->
+        <div class="row  w-100 d-lg-block d-md-block d-none">
+            <p class="text-center my-4 "><span
+                    style="font-size: 32px;border-bottom: 3px solid rgb(0, 0, 0);padding: 3px;">جدیدترین ست ها</span>
+            </p>
+        </div>
+
+
+        <!-- set ha lg , md hast -->
+        <div class="d-lg-block d-md-block d-none">
+            <div class="row my-4">
+                <div class="col-6 --jacket5">
+                    <a href=""><img src="img/set1.jpg" class="" width="98%" alt=""></a>
+
+                    <a href="" class="btn btn-outline-dark --jacket5-button"
+                        style="color: unset;text-decoration: unset;">
+                        مشاهده ست های اسپرت</a>
+                </div>
+
+                <div class="col-6 --jacket5">
+                    <a href=""><img src="img/set2.jpg" class="" width="98%" alt=""></a>
+
+                    <a href="" class="btn btn-outline-dark --jacket5-button"
+                        style="color: unset;text-decoration: unset;"> مشاهده ست های رسمی</a>
+                </div>
+            </div>
+        </div>
+
+
+      
+
+
+        <!-- set ha sm hast -->
+        <div class="d-sm-none d-block">
+            <div class="row my-4">
+                <div class="col-12 --jacket6 my-2">
+                    <a href=""><img src="img/set1.jpg" class="" width="98%" alt=""></a>
+                    <a href="" class="btn btn-outline-dark --jacket6-button"
+                        style="color: unset;text-decoration: unset;">
+                        مشاهده ست های اسپرت</a>
+                </div>
+
+                <div class="col-12 --jacket6 my-2">
+                    <a href=""><img src="img/set2.jpg" class="" width="98%" alt=""></a>
+                    <a href="" class="btn btn-outline-dark --jacket6-button"
+                        style="color: unset;text-decoration: unset;"> مشاهده ست های رسمی</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- footer baraye lg hast  -->
+        <div class="d-lg-block d-none ">
+            <div class="row w-100 bg-light style="height: 350px;">
+                <div class="col-3  d-flex justify-content-around align-items-center flex-column">
+                    <a href=""><img src="img/wp-logo.png" width="100%" alt=""></a>
+                    <img src="img/logo.png" alt="">
+
+                </div>
+
+
+                <div class="col-3  d-flex justify-content-around ">
+                    <ul class=" my-5 text-center " style="list-style: none; font-size: 16px;">
+                        <li class="" style="border-bottom: 3px solid rgb(255, 0, 0);padding: 3px;">
+                            <h5>دسترسی سریع</h5>
+                        </li>
+                        <li class="my-3"> <a href="" style="color: unset; text-decoration: unset;"> جدید ترین ها</a>
+                        </li>
+                        <li class="my-3"> <a href="" style="color: unset; text-decoration: unset;"> ست ها</a></li>
+                        <li class="my-3"> <a href="" style="color: unset; text-decoration: unset;"> کفش ها</a></li>
+                    </ul>
+
+                </div>
+
+
+                <div class="col-3  d-flex justify-content-around ">
+                    <ul class=" my-5 text-center " style="list-style: none; font-size: 16px;">
+                        <li class="" style="border-bottom: 3px solid rgb(255, 0, 0);padding: 3px;">
+                            <h5> راهنمای خدمات</h5>
+                        </li>
+                        <li class="my-3"> <a href="" style="color: unset; text-decoration: unset;">قوانین و مقررات </a>
+                        </li>
+                        <li class="my-3"> <a href="" style="color: unset; text-decoration: unset;"> نحوه خرید </a></li>
+                        <li class="my-3"> <a href="" style="color: unset; text-decoration: unset;"> شرایط عودت وجه</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+                <div class="col-3  d-flex justify-content-around ">
+
+                    <ul class="my-5 text-center  text-center list-unstyled" style="list-style: none; font-size: 16px;">
+                        <li class="" style="border-bottom: 3px solid rgb(255, 0, 0);padding: 3px;">
+                            <h5>همراه با ما </h5>
+                        </li>
+                        <li class="my-3"> <a href="" style="color: unset; text-decoration: unset;">همکاری با ما </a>
+                        </li>
+                        <li class="my-3"> <a href="" style="color: unset; text-decoration: unset;"> تماس با ما </a></li>
+                        <li class="my-3"> <a href="" style="color: unset; text-decoration: unset;"> فرصت های شغلی</a>
+                        </li>
+
+                        <div class="">
+                            <div class="-tamas-logo text-secondary">
+                                <a href="https://instagram.com">
+                                    <button type="button" class="btn mx-1 my-1 -lal"
+                                        style="background-color: rgb(255, 123, 0); color: #eee;">
+                                        <i class="bi bi-instagram"></i>
+                                    </button>
+                                </a>
+                                <a href="https://facebook.com">
+                                    <button type="button" class="btn mx-1 my-1 -lal"
+                                        style="background-color: rgb(167, 0, 153); color: #eee;">
+                                        <i class="bi bi-facebook"></i>
+                                    </button>
+                                </a>
+                                <a href="https://whatsapp.com">
+                                    <button type="button" class="btn mx-1 my-1 -lal"
+                                        style="background-color: green; color: #eee;">
+                                        <i class="bi bi-whatsapp"></i>
+                                    </button>
+                                </a>
+                                <a href="https://telegram.com">
+                                    <button type="button" class="btn mx-1 my-1 -lal"
+                                        style="background-color: rgb(0, 147, 167); color: #eee;">
+                                        <i class="bi bi-telegram"></i>
+                                    </button>
+                                </a>
+
+                            </div>
+                        </div>
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- footer baraye sm hast  -->
+        <div class="d-xl-none d-lg-none d-xl-block">
+            <div class="row">
+                <div class="col-12 d-flex flex-column justify-content-center align-items-center">
+                    <a href=""><img src="img/wp-logo.png" width="100%" alt=""></a>
+                    <img src="img/logo.png" alt="">
+                </div>
+
+
+                <div class="col-12 d-flex justify-content-around">
+                    <ul class=" my-5 text-center " style="list-style: none; font-size: 16px;">
+                        <li class="" style="border-bottom: 3px solid rgb(255, 0, 0);padding: 3px;">
+                            <h5>دسترسی سریع</h5>
+                        </li>
+                        <li class="my-3"> <a href="" style="color: unset; text-decoration: unset;"> جدید ترین ها</a>
+                        </li>
+                        <li class="my-3"> <a href="" style="color: unset; text-decoration: unset;"> ست ها</a></li>
+                        <li class="my-3"> <a href="" style="color: unset; text-decoration: unset;"> کفش ها</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-12  d-flex justify-content-around ">
+                    <ul class=" my-5 text-center " style="list-style: none; font-size: 16px;">
+                        <li class="" style="border-bottom: 3px solid rgb(255, 0, 0);padding: 3px;">
+                            <h5> راهنمای خدمات</h5>
+                        </li>
+                        <li class="my-3"> <a href="" style="color: unset; text-decoration: unset;">قوانین و مقررات </a>
+                        </li>
+                        <li class="my-3"> <a href="" style="color: unset; text-decoration: unset;"> نحوه خرید </a></li>
+                        <li class="my-3"> <a href="" style="color: unset; text-decoration: unset;"> شرایط عودت وجه</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+                <div class="col-12  d-flex justify-content-around ">
+
+                    <ul class="my-5 text-center  text-center list-unstyled" style="list-style: none; font-size: 16px;">
+                        <li class="" style="border-bottom: 3px solid rgb(255, 0, 0);padding: 3px;">
+                            <h5>همراه با ما </h5>
+                        </li>
+                        <li class="my-3"> <a href="" style="color: unset; text-decoration: unset;">همکاری با ما </a>
+                        </li>
+                        <li class="my-3"> <a href="" style="color: unset; text-decoration: unset;"> تماس با ما </a></li>
+                        <li class="my-3"> <a href="" style="color: unset; text-decoration: unset;"> فرصت های شغلی</a>
+                        </li>
+
+                        <div class="">
+                            <div class="-tamas-logo text-secondary">
+                                <a href="https://instagram.com">
+                                    <button type="button" class="btn mx-1 my-1 -lal"
+                                        style="background-color: rgb(255, 123, 0); color: #eee;">
+                                        <i class="bi bi-instagram"></i>
+                                    </button>
+                                </a>
+                                <a href="https://facebook.com">
+                                    <button type="button" class="btn mx-1 my-1 -lal"
+                                        style="background-color: rgb(167, 0, 153); color: #eee;">
+                                        <i class="bi bi-facebook"></i>
+                                    </button>
+                                </a>
+                                <a href="https://whatsapp.com">
+                                    <button type="button" class="btn mx-1 my-1 -lal"
+                                        style="background-color: green; color: #eee;">
+                                        <i class="bi bi-whatsapp"></i>
+                                    </button>
+                                </a>
+                                <a href="https://telegram.com">
+                                    <button type="button" class="btn mx-1 my-1 -lal"
+                                        style="background-color: rgb(0, 147, 167); color: #eee;">
+                                        <i class="bi bi-telegram"></i>
+                                    </button>
+                                </a>
+
+                            </div>
+                        </div>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class=" d-flex justify-content-end button">
+            <button onclick="myFunction()" class=" mx-3 btn btn-danger" style="width: 60px;  "><i class="bi bi-arrow-up-square " style="font-size: 24px;"></i></button>
+        </div>
+
+
+
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 5,
+            spaceBetween: 0,
+            slidesPerGroup: 5,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".--next",
+                prevEl: ".--prev",
+            },
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".mySwiper1", {
+            slidesPerView: 2,
+            spaceBetween: 0,
+            slidesPerGroup: 2,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".--next",
+                prevEl: ".--prev",
+            },
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

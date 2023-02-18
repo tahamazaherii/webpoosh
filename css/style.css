@@ -1,0 +1,141 @@
+@font-face {
+    font-family: irancell;
+    src: url(../fonts/Irancell_Medium.ttf);
+}
+@font-face {
+    font-family: yekan;
+    src: url(../fonts/Yekan.woff);
+}
+@font-face {
+    font-family: vaziri;
+    src: url(../fonts/Vazirmatn-Medium.ttf);
+}
+.-text-p{
+    position: relative;
+}
+
+.-span1{
+    position: absolute;
+    right: 15%;
+    top: 20%;
+}
+.-span2{
+    position: absolute;
+    right: 17%;
+    top: 45%;
+}
+.-text-p a{
+    position: absolute;
+    left:18%;
+    top: 37%;
+}
+.--prev{
+
+position: absolute;
+    top: 50%;
+    width: calc(var(--swiper-navigation-size)/ 44 * 27);
+    height: var(--swiper-navigation-size);
+    margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.--next{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    width: calc(var(--swiper-navigation-size)/ 44 * 27);
+    height: var(--swiper-navigation-size);
+    margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.--jacket{
+    position: relative;
+}
+.--jacket-span{
+    position: absolute;
+    right: 35%;
+    top: 40%;
+    color: white;
+}
+.--jacket-button{
+    position: absolute;
+    right: 45%;
+    top: 52%;
+}
+.--jacket1{
+    position: relative;
+}
+.--jacket1-span{
+    position: absolute;
+    right: 35%;
+    top: 40%;
+    
+}
+.--jacket1-button{
+    position: absolute;
+    right: 45%;
+    top: 52%;
+}
+.--jacket3{
+    position: relative;
+}
+.--jacket3-span{
+    position: absolute;
+    right: 30%;
+    top: 40%;
+    color: white;
+}
+.--jacket3-button{
+    position: absolute;
+    right: 45%;
+    top: 57%;
+}
+.--jacket4{
+    position: relative;
+}
+.--jacket4-span{
+    position: absolute;
+    right: 30%;
+    top: 40%;
+    
+}
+.--jacket4-button{
+    position: absolute;
+    right: 45%;
+    top: 57%;
+}
+.--jacket5{
+    position: relative;
+}
+.--jacket5-button{
+    position: absolute;
+    right: 35%;
+   bottom: 5%;
+}
+
+
+.--jacket6{
+    position: relative;
+}
+.--jacket6-button{
+    position: absolute;
+    right: 30%;
+   bottom: 5%;
+}
+.button{
+   
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 25px;
+  
+   
+    z-index: 999;
+}
